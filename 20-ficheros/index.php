@@ -5,8 +5,8 @@ $archivo = fopen("fichero_texto.txt", "a+");
 
 // Leer contenido
 while(!feof($archivo)){
-	$contenido = fgets($archivo);
-	echo $contenido."<br/>";
+$contenido = fgets($archivo);
+echo $contenido."<br/>";
 }
 
 // Escribir
@@ -14,7 +14,7 @@ fwrite($archivo, "***Soy un texto metido desde php***");
 
 // Cerrar archivo
 fclose($archivo);
- 
+
  */
 
 // Copiar
@@ -26,8 +26,8 @@ fclose($archivo);
 // Eliminar
 //unlink('archivito_recopiadito.txt') or die('Error al borrar');
 
-if(file_exists("fichero_texto.txt")){
+if (file_exists("fichero_texto.txt")) {
 	echo "El archivo existe!!";
-}else{
+} else {
 	echo "NO EXISTE!!";
 }

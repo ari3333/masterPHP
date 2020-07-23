@@ -8,7 +8,7 @@ if (!empty($_POST['nombre']) && !empty($_POST['apellidos']) &&
 	//asigno el valor enviado por post a las variables
 	$nombre = $_POST['nombre'];
 	$apellidos = $_POST['apellidos'];
-	$edad = (int) $_POST['edad'];
+	$edad = (int) $_POST['edad']; //convirtiendolo a int porque viene como string
 	$email = $_POST['email'];
 	$pass = $_POST['pass'];
 
